@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.GameFragment">
+
+    <TextView
+        android:id="@+id/Player1"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="Player 1: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/Player2"
+        app:layout_constraintEnd_toStartOf="@+id/Player1Score"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Player1Score"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Player2Score"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/NewGame"
+        android:layout_width="151dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="NEW GAME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="339dp"
+        android:layout_height="401dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!--ROW 1-->
+
+        <ImageView
+            android:id="@+id/a2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="92dp" />
+
+        <ImageView
+            android:id="@+id/a1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="92dp" />
+
+        <ImageView
+            android:id="@+id/b1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="22dp" />
+
+        <ImageView
+            android:id="@+id/b2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/b3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal|end|center_vertical"
+            android:layout_marginEnd="22dp" />
+
+        <ImageView
+            android:id="@+id/c1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="32dp" />
+
+        <ImageView
+            android:id="@+id/c2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="32dp" />
+
+        <ImageView
+            android:id="@+id/c3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|end|bottom"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="32dp" />
+
+        <View
+            style="@style/ViewColor"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="5dp" />
+
+        <View
+            style="@style/ViewColor"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp" />
+
+        <View
+            style="@style/ViewColor"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="120dp" />
+
+        <View
+            style="@style/ViewColor"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="180dp" />
+
+        <ImageView
+            android:id="@+id/a3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|end|top"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="22dp" />
+
+        <!--ROW 2-->
+
+        <!--ROW 3-->
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/Player2Score"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewGame"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/Player2"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="Player 2: "
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewGame"
+        app:layout_constraintEnd_toStartOf="@+id/Player2Score"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/resetScore"
+        android:layout_width="48dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="30dp"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@+id/Player1"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
